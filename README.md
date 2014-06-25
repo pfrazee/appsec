@@ -1,9 +1,16 @@
 Appsec
 ======
 
-A collection of Web security tools
+A collection of Web security tools.
 
- - `new appsec.Worker(src, {imports:, whitelist:})` WebWorker API nullifying with script-injection (todo)
+ - HTML sanitation with Google Caja
+ - CSS sanitation with Rework
+ - Web Worker API nullification with script-injection
+
+
+### API
+
+ - `new appsec.Worker(src, {imports:, whitelist:})` creates a Worker with APIs nullified (todo)
    - `imports ([string])`: JS files to auto-import before loading
    - `whitelist ([string])`: APIs to allow
  - `appsec.sanitizeCSS(styles, {prefix:})` CSS sanitation with Rework. (todo)
